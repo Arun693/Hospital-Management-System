@@ -1,0 +1,17 @@
+<div class="buttonContainer">
+  <button class="btn btn-success" (click)="back()">Back</button>
+</div>
+<div *ngIf="depatments">
+  <table class="table table-bordered">
+    <tr>
+      <th>Department Name</th>
+      <th> Head Of department</th>
+      <th>Contact Number</th>
+    </tr>
+    <tr *ngFor="let item of depatments">
+      <td>{{item.departmentname}}</td>
+      <td>{{item.head}}</td>
+      <td>{{item.contactnumber}}</td>
+    </tr>
+  </table>
+</div>
